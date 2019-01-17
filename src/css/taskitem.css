@@ -1,0 +1,35 @@
+.task-item{
+    font-size:1.4vw;
+    letter-spacing: 1px;
+    color: white;
+    background-color: rgb(20,133,204);
+    max-width: 25vw;
+    padding:5px;
+    overflow:hidden;
+    cursor: pointer;
+    transition:0.4s color,background-color;
+    margin-bottom: 2vh !important;
+    user-select: none;
+}
+
+.task-item:hover{
+    color: rgb(20,133,204);
+    background-color: white;
+}
+
+.task-complete{
+    animation: completed;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+
+@keyframes completed{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(540deg);
+    }
+}

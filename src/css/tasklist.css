@@ -1,0 +1,69 @@
+.tasklist-container div{
+    text-align: center;
+}
+.tasklist-container,
+.tasklist-container div{
+    margin: 0 auto;
+}
+.tasklist-controls{
+    top:2vh;
+    max-width: 25vw;
+    padding: 10px;
+    border-radius: 5px;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.tasklist-controls input{
+    margin-right: 2vw;
+    outline: none;
+}
+.tasklist-controls a{
+    background-color: rgb(109, 18, 18);
+    padding: 5px;
+    text-decoration: none;
+    transition: 0.4s color, background-color;
+}
+.tasklist-controls input,
+.tasklist-controls a{
+    flex:auto;
+}
+
+.tasklist-controls a:hover{
+    color:rgb(109, 18, 18);
+}
+
+.tasklist-controls,
+.tasklist-controls a:hover{
+    background-color: white;
+}
+
+.tasklist-items{
+    top:6vh;
+}
+.tasklist-controls,
+.tasklist-items{
+    position: relative;
+}
+.cta-message,
+.tasklist-controls a,
+.tasklist-controls input{
+    font-size: 1vw;
+}
+
+.cta-message,
+.tasklist-controls input,
+.tasklist-controls a{
+    user-select: none;
+}
+.tasklist-controls a,
+.cta-message{
+    letter-spacing: 1px;
+}
+.cta-message,
+.tasklist-controls a{
+    color:white;
+}
+.cta-message{
+    padding-top:20px;
+}
